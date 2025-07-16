@@ -555,6 +555,7 @@ footer{
     }
 
     .header{
+        display: none;
         height: 70px;
     }
 
@@ -572,7 +573,7 @@ footer{
     }
 
     .header-right {
-    gap: 10px;
+        gap: 10px;
     }
 
     .home {
