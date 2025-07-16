@@ -139,7 +139,7 @@ body{
     padding: 0 15px;
 }
 .home{
-    background-image: url("img/home.jpg");
+    background-image: url("img/home2.jpg");
     background-position: center;
     background-size: cover;
     height: 436px;
@@ -233,7 +233,6 @@ body{
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-  
 }
 
 .home-info h1{
@@ -339,7 +338,7 @@ strong{
     font-weight: 500;
 }
 .aboutUs__left{
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255, 0.7);
     padding: 50px 150px 50px 50px;
     border-radius: 25px;
 }
@@ -440,7 +439,8 @@ footer{
 
 @media (max-width: 1024px) {
     .catalog__links{
-    grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 
     .aboutUs__block{
@@ -451,48 +451,95 @@ footer{
         width: 100%;
         height: 580px;
     }
+
+    .whyUs__item-text h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .whyUs__item-text p{
+        font-size: 16px;
+    }
+
+    .whyUs__item-numberMain{
+        right: 28px;
+    }
+
+    .whyUs__item-numberSub {
+        right: 16px;
+    }
 }
 
 @media (max-width: 768px) {
 
     .header-block{
-    display: none;
+        display: none;
     }
 
+    .home-info h1{
+        font-size: 30px;
+    }
+
+    .catalog {
+        padding: 50px 0px;
+    }
+    
     .catalog__links{
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aboutUs{
+        padding: 50px 0;
+        background-image: url(../img/icons/tree_mob.svg);
+    }
+
+    .aboutUs__block{
+        background-color: rgb(255, 255, 255, 0.7);
+        border-radius: 25px;
     }
 
     .aboutUs__left{
-    padding: 50px;
+        padding: 40px 20px 15px 20px;
+        background-color: initial;
     }
 
     .whyUs{
-        padding: 80px 0;
+        padding: 50px 0;
         background-image:none;
     }
 
     .whyUs__ask{
-    position: static;
-    font-weight: 500;
-    line-height: 1.3;
-    text-align: start;
-    text-transform: none;
-    margin-bottom: 30px;
+        position: static;
+        font-weight: 500;
+        line-height: 1.3;
+        text-align: start;
+        text-transform: none;
+        margin-bottom: 30px;
+        font-size: 30px;
     }
    
     .whyUs__ask br{
-    display:none
+        display:none
     }
 
     .whyUs__blok {
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: calc(20px + (286 - 20) * ((100vw - 320px) / (1320 - 320)));
-    row-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: calc(20px + (286 - 20) * ((100vw - 320px) / (1320 - 320)));
+        row-gap: 20px;
     }
+
 }
 
 @media (max-width: 425px) {
+
+    h2 {
+    color: black;
+    font-size: 30px;
+    }
+
+    .header{
+        height: 70px;
+    }
 
     .home {
         height: 342px;
@@ -511,9 +558,26 @@ footer{
         font-size: 16px;
     }
 
+    .catalog__links{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .catalog__links-item {
+        height: 200px;
+    }
+
     .aboutUs{
-    padding: 80px 0;
-    background-image: none;
+        padding: 80px 0;
+    } 
+
+    .aboutUs .content{
+        padding: 0px;
+    }
+
+    .aboutUs__left p {
+        font-size: 16px;
+        margin-bottom: 20px;
     }
 
     .aboutUs__right img{
@@ -521,8 +585,16 @@ footer{
     }
 
     .aboutUs__right{
-    min-width: 0px;
-    border-radius: 25px;
+        min-width: 0px;
+        border-radius: 25px;
+    }
+
+    .whyUs__item-numberMain{
+        right: 16px;
+    }
+
+    .whyUs__item-numberSub {
+        display: none;
     }
 
 }
