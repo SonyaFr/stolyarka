@@ -227,6 +227,10 @@ body{
     user-select: none;
 }
 
+.header__bt--menu{
+    display: none;
+}
+
 .home-info{
     min-height: 336px;
     display: flex;
@@ -443,6 +447,10 @@ footer{
         display: none;
     }
 
+    .header__bt--menu{
+        display: block;
+    }
+
     .catalog__links{
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -479,6 +487,14 @@ footer{
 
     .home-info h1{
         font-size: 30px;
+    }
+
+    .header-logo__logoText {
+        font-size: 16px;
+    }
+
+    .header-right {
+    gap: 15px;
     }
 
     .catalog {
@@ -542,6 +558,23 @@ footer{
         height: 70px;
     }
 
+    .header-block {
+        padding: 5px 0;
+    }
+
+    .header-logo__logoImg{
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-logo__logoText {
+        font-size: 14px;
+    }
+
+    .header-right {
+    gap: 10px;
+    }
+
     .home {
         height: 342px;
     }
@@ -595,6 +628,13 @@ footer{
     }
 
     .whyUs__item-numberSub {
+        display: none;
+    }
+}
+
+@media (max-width: 320px){
+
+    .header-logo__logoText{
         display: none;
     }
 
