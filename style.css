@@ -438,6 +438,11 @@ footer{
 }
 
 @media (max-width: 1024px) {
+
+    .header-nav {
+        display: none;
+    }
+
     .catalog__links{
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -471,10 +476,6 @@ footer{
 }
 
 @media (max-width: 768px) {
-
-    .header-block{
-        display: none;
-    }
 
     .home-info h1{
         font-size: 30px;
